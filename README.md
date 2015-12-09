@@ -78,7 +78,7 @@ While we are working with MySQL, let’s create the database that MediaWiki will
       `CREATE USER wikiuser@localhost IDENTIFIED BY 'password';`
    4. Grant permissions to MediaWiki to access and modify the database.
       `GRANT index, create, select, insert, update, delete, alter, lock tables on mediawikidb.* TO mediawikiuser@localhost IDENTIFIED BY 'mediawikipassword';`
-     5. Let’s finish by flushing MySQL privileges by running `FLUSH PRIVILEGES;` and then exit the MySQL console by using `exit`.  After exiting the console, run `service mysql restart` to restart the MySQL service.
+   5. Let’s finish by flushing MySQL privileges by running `FLUSH PRIVILEGES;` and then exit the MySQL console by using `exit`.  After exiting the console, run `service mysql restart` to restart the MySQL service.
 
 ## Configure PHP-FPM and Lighttpd
 
